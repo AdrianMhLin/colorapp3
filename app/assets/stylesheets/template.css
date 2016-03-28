@@ -1,0 +1,58 @@
+
+.templates-screen {
+	margin-left: 8.2%;
+}
+
+.first-row {
+	margin-top: 6.7em;
+}
+.last-row {
+	margin-top: 0.8em;
+}
+.templates-app {
+	height: 3.8em;
+	width: 3.8em;
+	margin: 0.5em 0.55em 0.5em 0.7em;
+	border-radius: 1em;
+	display: inline-block;
+	background-size: 100%;
+}
+.templates-app-hover:hover {
+	background-color: #E0E0E0;
+}
+
+#template-menu {
+	position: fixed;
+}
+.template { /* diff from .iPhone-6 because of profile */
+/*	height: 698px;
+	width: 343px;*/
+	/*float: right;*/
+
+	position: fixed;
+ 	bottom: 2.3%;
+  	right: 2.3%;
+
+}
+
+.iPhone-6 { /* diff from .template because of profile */
+	background-image: url(../images/template_iphone6.png);
+	background-size: 100%;
+	z-index: 100000;
+	background-repeat: no-repeat;
+	height: 698px;
+	width: 343px;
+}
+/*	.iPhone-5 img {
+		height: 100%;
+	}
+*/
+
+.template-show {
+	float: left;
+}
+
+.template-show .first-row { /* this is so the profile things show up correctly */
+	padding-top: 30%;
+}
+

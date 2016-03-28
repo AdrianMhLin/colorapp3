@@ -1,0 +1,92 @@
+<input id="user_id" type="hidden" name="user_id" value="<%=session[:user_id]%>">
+
+<!--~~~~~~~~~~~~-->
+<!-- Navigation -->
+<!--~~~~~~~~~~~~-->
+
+<!-- primary navbar -->
+<nav id="navbar-user-tasks"class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+   
+    <div class"top-left">
+     <%= render 'navbar_partials/primary/searchbar' %>
+     <%= render 'navbar_partials/primary/misc_buttons' %>
+    </div>
+
+
+    <div class="top-center">
+      <img id="title-colorappin" src="/assets/colorappin-title-shrunk-upped.png" alt="Adrian M Lin's ColorApp.in Logo">
+    </div>
+    
+
+    <div class="top-right">
+      <!-- log in/ sign up / error msg details -->
+      <%= render 'navbar_partials/primary/session_details' %>
+
+      <!-- template menu -->
+      <navbar id="template-menu" class="navbar-rightside">
+        <ul>
+        <!-- template menu - name this template -->
+          <li><input id="template-name-input" class="invisible" type="text" name="template_name" placeholder="Name this template!"></li>
+
+           <!-- template menu - show button -->
+          <li><button title="Show/hide template" type="button" class="btn btn-default" id="template-show-button"><span class="glyphicon glyphicon-phone"></span></button></li>
+
+          <!-- template menu - template new button -->
+          <li><button title="Clear template" class="btn btn-default" id="template-new-button"><span class="glyphicon glyphicon-plus"></span></button></li>
+
+          <!-- template menu - save button -->
+          <li><button title="Save template" type="button" class="btn btn-default" id="template-save-button"><span class="glyphicon glyphicon-save"></span></button></li>
+
+          <!-- template menu - template select button -->        
+          <li><button title="Load selected template" class="btn btn-default" id="template-select-button"><span class="glyphicon glyphicon-folder-open"></span></button></li>
+          <!-- template menu - select -->
+          <li><select title="show previous templates" name="template_id" id="template-select"><!-- user id is session-->
+            <%if templates%>
+              <%templates.each do |t|%>
+                <%if t.user_id == 0%> <!-- for public templates -->
+                  <option id="template-select-option-<%=t.id%>" value="<%=t['id']%>"><%=t.name%></option>
+                <%end%>
+              <%end%>
+            <%end%>
+          </select></li>   
+
+          <!-- template menu - template delete button -->
+          <li><button id="template-delete-button" class="btn btn-default invisible"><span title="Delete selected template" class="glyphicon glyphicon-remove" ></span></button></li>
+      
+        </ul>
+      </navbar>
+    </div>
+
+  </div>
+</nav>
+
+<!-- hero image -->
+<img id="hero-image" src="/assets/colorapp-title-background-small-stretched.jpg" alt="Adrian M Lin's ColorApp.in cover image">
+
+<!-- secondary navbar -->
+<div id="navbar-sorting-bar" class="container-fluid">
+  <%= render 'navbar_partials/secondary/navbar_sorting' %>
+</div>
+
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~-->
+<!-- main content area -->
+<!--~~~~~~~~~~~~~~~~~~~-->
+<div id="main-content-area">
+  <img id="loading-circle" src='/images/spinner.gif'> 
+</div>
+<div id="main-content-bottom-bumper"></div> <!-- this takes the hiding from the bottom bar -->
+
+<%= render 'home/template_iphone' %>
+
+
+
+
+<!--~~~~~~~~-->
+<!-- footer -->
+<!--~~~~~~~~-->
+<!-- render 'navbar_partials/footer/footer' %> -->
+

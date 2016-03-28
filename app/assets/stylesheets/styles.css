@@ -1,0 +1,234 @@
+
+
+	#navbar-links ul {
+		padding: 1em 0 1em 0;
+		margin: -1em 0 0 0;
+	}
+
+		#navbar-links li {
+			display: inline-block;
+			margin: 0 1em 0 1em;
+		}
+	.navbar-links-item {
+		cursor: pointer;
+	}
+	.navbar-links-item:hover {
+		color: lightseagreen;
+	}
+
+.faded {
+	opacity: 0.5;
+}
+
+#crystal-ball {
+	height: 17em;
+	border-radius: 1em;
+	margin-bottom: 1em;
+}
+.navbar-leftside {
+	float: left;
+	clear: left;
+}
+
+.navbar-rightside {
+	float: right;
+	clear: right;
+	right: 0em;
+
+}
+
+#instructions-image {
+	width: 100%;
+}
+
+#hero-image {
+	width: 105%;
+	margin-left: -1.5%;
+	margin-top: 4.5%;
+}
+
+	.navbar-rightside a button {
+		float: right;
+	}
+
+	.navbar-rightside form {
+		clear: both;
+	}
+	.navbar-rightside button {
+		margin: 1em 0 0 0;
+	}
+
+
+
+#title-colorappin {
+	height: 6.5em;
+	margin-left: 17em;
+	margin-top: 0.5em;
+	position: absolute;
+
+}
+#title-colorappin:hover {
+	cursor: pointer;
+}
+
+#navbar-administrative-tasks {
+	margin-bottom: -1em;
+}
+
+
+
+.glyphicon {
+	color: lightseagreen;
+}
+
+
+li {
+	list-style: none;
+}
+.invisible {
+	opacity: 0;
+}
+input {
+	border-radius: 0.25em;
+}
+
+
+
+
+
+button {
+	background: snow !important;
+}
+
+
+
+#template-menu {
+
+}
+li {
+	display: inline;
+}
+
+#navbar-user-tasks {
+	display: inline;
+}
+
+#searchbar {
+	margin: 2em 0 0 2em;
+}
+
+
+
+
+
+
+
+.glyphicon-plus:hover {
+	color: gold;
+}
+.glyphicon-save:hover {
+	color: darkblue;
+}
+.glyphicon-folder-open:hover{
+	color: gold;
+}
+.glyphicon-remove:hover {
+	color: red;
+}
+.glyphicon-phone:hover {
+	color: silver;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.modal-content{
+	border-radius: 1.5em;
+}
+
+
+.modal-content {
+	padding: 2em;
+	
+}
+.modal-title {
+	font-weight: bold;
+}
+.modal-genre {
+	font-style: italic;
+}
+
+.app-list {
+	margin-left: 2em;
+	padding-left: 2em;
+
+}
+
+#signup-button-form {
+	display: inline;
+}
+
+
+#navbar-account {
+
+}
+	#navbar-account li {
+		
+	}
+
+#message-search {
+	cursor: pointer;	
+}
+
+	#message-search:hover {
+		color: lightseagreen;
+	}
+
+
+
+.app-view {
+
+	margin: 0.75em;
+	padding: 0.75em;
+	float: left;
+/*	background-color: blanchedalmond;
+	border-radius: 1.5em;
+	width: 20%;*/
+	
+}
+#main-content-bottom-bumper {
+	min-height: 5em;
+	clear: both;
+}
+img.appView {
+	height: 7.15em;
+	border-radius: 1.26em;
+	clear: both;
+}
+img.appView:hover {
+	border: solid 5px lightseagreen;
+	cursor: pointer;
+}
+
+.flash-notice {
+	color: lightseagreen;
+}
+
+
+
+.info {
+	background: beige;
+	border-radius: 1em;
+}
+
+
+
